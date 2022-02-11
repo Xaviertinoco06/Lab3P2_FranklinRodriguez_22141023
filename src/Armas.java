@@ -1,14 +1,14 @@
 public class Armas {
     private String nombre;
-    private int dano;
+    private int daño;
 
-    public Armas(int dano) {
-        this.dano = dano;
+    public Armas(int daño) {
+        this.daño = daño;
     }
 
     public Armas(String nombre, int dano) {
         this.nombre = nombre;
-        this.dano = dano;
+        this.daño = dano;
     }
 
     public String getNombre() {
@@ -19,16 +19,16 @@ public class Armas {
         this.nombre = nombre;
     }
 
-    public int getDano() {
-        return dano;
+    public int getDaño() {
+        return daño;
     }
 
-    public void setDano(int dano) {
-        this.dano = dano;
+    public void setDaño(int dano) {
+        this.daño = dano;
     }
 
     @Override
     public String toString() {
-        return "Arma{" + "nombre=" + nombre + ", dano=" + dano + '}';
+        return "Arma{" + "nombre=" + nombre + ", daño=" + daño + '}';
     }
 }

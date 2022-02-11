@@ -1,16 +1,20 @@
+import practicapolimorfismo.Soldado;
+
 import javax.naming.ldap.LdapName;
 
 public  abstract class  Aldeano {
+    private String apellido;
     private String nombre;
     private int edad;
     private int vida;
-    private int daño;
 
-    public Aldeano(String nombre, int edad, int tiempo, String rango, int vida,int daño) {
+
+    public Aldeano(String apellido,String nombre, int edad, int vida) {
+        this.apellido=apellido;
         this.nombre = nombre;
         this.edad = edad;
-        this.daño= daño;
         this.vida = vida;
+
     }
     public String getNombre() {
         return nombre;
@@ -28,17 +32,16 @@ public  abstract class  Aldeano {
         this.edad = edad;
     }
 
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
     public int getVida() {
         return vida;
-    }
-
-    public int getDaño() {
-        return daño;
-    }
-
-    public void setDaño(int daño) {
-        this.daño = daño;
     }
 
     public void setVida(int vida) {
@@ -51,4 +54,5 @@ public  abstract class  Aldeano {
     public String toString() {
         return "Aldeano{" + "nombre='" + nombre + '\'' + ", edad=" + edad + ", vida=" + vida + ", daño=" + daño + '}';
     }
+    public abstract int daño(Aldeano ataque);
 }
