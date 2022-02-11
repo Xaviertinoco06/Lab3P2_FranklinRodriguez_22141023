@@ -1,9 +1,10 @@
 public class normales extends Aldeano{
+
     private puño castañazo=new puño();
 
-    public puño(String nombreArma,String apellidos,String nombre,int edad,int vida){
+    public normales (String nombreArma,String apellidos,String nombre,int edad,int vida){
         super(apellidos,nombre,edad,vida);
-        this.puño.setNombre(nombreArma);
+        this.castañazo.setNombre(nombreArma);
     }
 
     @Override
@@ -11,7 +12,7 @@ public class normales extends Aldeano{
         return "normales{" + "castañazo=" + castañazo + '}';
     }
     public int daño(Aldeano ataque){
-        if(ataque instanceof pacifista)return(int)Math.round(castañazo.getDaño()*0.005);
+        if(ataque instanceof pacifista)return(int)Math.round(castañazo.getDaño()*0.05);
         return castañazo.getDaño();
     }
 }

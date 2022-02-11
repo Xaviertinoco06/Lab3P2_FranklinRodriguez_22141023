@@ -52,7 +52,8 @@ public  abstract class  Aldeano {
 
     @Override
     public String toString() {
-        return "Aldeano{" + "nombre='" + nombre + '\'' + ", edad=" + edad + ", vida=" + vida + ", daño=" + daño + '}';
+        return "Aldeano{" + "nombre='" + nombre + '\'' + ", edad=" + edad + ", vida=" + vida ;
     }
+
     public abstract int daño(Aldeano ataque);
 }

@@ -1,8 +1,8 @@
-public class pacifista {
+public class pacifista extends Aldeano {
     private Discurso discurso = new Discurso();
 
     public pacifista(String nombreArma, String apellido, String nombre, int edad, int vida) {
-        super(apellido,nombre, edad, vida);
+        super(apellido,nombre,edad,vida);
         this.discurso.setNombre(nombreArma);
 
 
