@@ -1,6 +1,4 @@
-import practicapolimorfismo.Soldado;
 
-import javax.naming.ldap.LdapName;
 
 public  abstract class  Aldeano {
     private String apellido;
